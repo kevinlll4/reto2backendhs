@@ -1,0 +1,23 @@
+html
+    head
+        title Probando api
+        link(rel='stylesheet',type='text/css',href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+        script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+
+    body
+        div(class="container")
+            div(class="jumbotron")
+                h1 Datos del usuario #{data.username}
+  
+            table(class="table table-bordered")
+                thead
+                    tr(class="info text-cente")
+                        td(class="text-center")  STEAMID
+                        td(class="text-center")  STEAMID3
+                        td(class="text-center")  STEAMID64
+                tbody
+                    tr(class="center")
+                        td(class="text-center") #{data.steamID}
+                        td(class="text-center") #{data.steamID3}
+                        td(class="text-center") #{data.steamID64}
